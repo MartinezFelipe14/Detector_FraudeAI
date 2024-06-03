@@ -2,3 +2,4 @@
 "/home/martinez_felipe/Programação/Python_Programas/Diversos/Detector_FraudeAI/creditcard" filter=lfs diff=lfs merge=lfs -csv
 ~/Programação/Python_Programas/Diversos/Detector_FraudeAI/creditcard filter=lfs diff=lfs merge=lfs -csv
 creditcard filter=lfs diff=lfs merge=lfs -csv
+~Programação/Python_Programas/Diversos/Detector_FraudeAI/main.ipynb filter=lfs diff=lfs merge=lfs -text
