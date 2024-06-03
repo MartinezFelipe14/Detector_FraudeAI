@@ -1,3 +1,4 @@
 *.csv filter=lfs diff=lfs merge=lfs -csv
 "/home/martinez_felipe/Programação/Python_Programas/Diversos/Detector_FraudeAI/creditcard.csv" filter=lfs diff=lfs merge=lfs -csv
 ~/Programação/Python_Programas/Diversos/Detector_FraudeAI/creditcard.csv filter=lfs diff=lfs merge=lfs -csv
+creditcard.csv filter=lfs diff=lfs merge=lfs -text
