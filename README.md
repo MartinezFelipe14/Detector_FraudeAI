@@ -1,22 +1,27 @@
 # Detector de Fraude AI
 Modelo preditivo detecta fraude de cartão de crédito.
 
+
 ## Índice
 1. [Descrição](#descrição)
 2. [Interface Interativa](#interface-interativa)
-4. [Treinamento](#treinamento)
-5. [Avaliação](#avaliação)
+3. [Treinamento](#treinamento)
+4. [Avaliação](#avaliação)
+5. [Fine Tuning](#fine-tuning)
 6. [Contribuição](#contribuição)
 7. [Referências](#referências)
 8. [Licença](#licença)
+
 
 ## Descrição
 
 Modelo com características de aprendizado supervisionado que detecta fraude de cartão de crédito com base no conjunto de dados de treinamento.
 
+
 ## Interface Interativa
 
 Para visualizar a Interface Interativa e testar acesse:[App Streamlit](https://detectordefraudeai.streamlit.app/)
+
 
 ## Treinamento
 
@@ -24,6 +29,7 @@ Os dados foram preprocessados dentro de uma pipeline do imblearn, e foram tratad
 
 
 ![Distribuição das Classes](imgs_readme/distrib.png)
+
 
 ## Avaliação
 
@@ -35,6 +41,11 @@ Os dados foram preprocessados dentro de uma pipeline do imblearn, e foram tratad
 ### Validação Cruzada
 
 A validação foi feita manualmente para a aplicação do SMOTE não afetar a validação, assim, não comprometendo os resultados.
+
+
+## Fine-Tuning
+
+Para a otimização de hiperparâmetros foi utilizado otimização bayesiana com [gp_minimize](https://scikit-optimize.github.io/dev/modules/generated/skopt.gp_minimize.html) do scikit-optimize que utiliza Processos Gaussianos para achar o melhores hiperparâmetros. [Fine-Tuning](/fine_tuning.ipynb)
 
 
 ## Contribuição
@@ -70,6 +81,7 @@ Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca
 Yann-Aël Le Borgne, Gianluca Bontempi Aprendizado de máquina reproduzível para detecção de fraude de cartão de crédito - Manual prático
 
 Bertrand Lebichot, Gianmarco Paldino, Wissam Siblini, Liyun He, Frederic Oblé, Gianluca Bontempi Estratégias de aprendizagem incremental para detecção de fraude em cartões de crédito , IInternational Journal of Data Science and Analytics
+
 
 ## Licença
 
