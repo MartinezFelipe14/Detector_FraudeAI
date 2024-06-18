@@ -1,3 +1,54 @@
+# Detector de Fraude AI
+Modelo preditivo detecta fraude de cartão de crédito.
+
+## Índice
+1. [Descrição](#descrição)
+2. [Interface Interativa](#interface-interativa)
+4. [Treinamento](#treinamento)
+5. [Avaliação](#avaliação)
+6. [Contribuição](#contribuição)
+7. [Referências](#referências)
+8. [Licença](#licença)
+
+## Descrição
+
+Modelo com características de aprendizado supervisionado que detecta fraude de cartão de crédito com base no conjunto de dados de treinamento.
+
+## Interface Interativa
+
+Para visualizar a Interface Interativa e testar acesse:[App Streamlit](https://detectordefraudeai.streamlit.app/)
+
+## Treinamento
+
+Os dados foram preprocessados dentro de uma pipeline do imblearn, e foram tratados com [SMOTE](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) devido ao conjunto de dados ser extremamente desbalanceado, e também [MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
+
+
+![Distribuição das Classes](imgs_readme/distrib.png)
+
+## Avaliação
+
+### Matriz de confusão
+
+![Matriz de Confusão](imgs_readme/matriz_conf.png)
+
+
+### Validação Cruzada
+
+A validação foi feita manualmente para a aplicação do SMOTE não afetar a validação, assim, não comprometendo os resultados.
+
+
+## Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch com sua feature (`git checkout -b feature/nome-da-feature`)
+3. Adicione as mudanças no git local (`git add .`)
+4. Comite suas mudanças (`git commit -m 'Nome da Alteração'`)
+5. Faça o push para a branch (`git push origin feature/nome-da-feature`)
+6. Abra um Pull Request e descreva as alterações
+
+
+## Referências
+
 Esse trabalho só foi possibilitado pelos estudos a seguir:
 
 Andrea Dal Pozzolo, Olivier Caelen, Reid A. Johnson e Gianluca Bontempi. Calibrando Probabilidade com Subamostragem para Classificação Desequilibrada. No Simpósio sobre Inteligência Computacional e Mineração de Dados (CIDM), IEEE, 2015
@@ -19,3 +70,7 @@ Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca
 Yann-Aël Le Borgne, Gianluca Bontempi Aprendizado de máquina reproduzível para detecção de fraude de cartão de crédito - Manual prático
 
 Bertrand Lebichot, Gianmarco Paldino, Wissam Siblini, Liyun He, Frederic Oblé, Gianluca Bontempi Estratégias de aprendizagem incremental para detecção de fraude em cartões de crédito , IInternational Journal of Data Science and Analytics
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](./LICENSE)
